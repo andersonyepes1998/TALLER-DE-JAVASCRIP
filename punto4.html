@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUNTO # 4</title>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+    
+    <H2 class="lista">Listado de que haceres</H2>
+    <ol>
+        <li>Desayunar</li>
+        <li>Ir al banco</li>
+        <li>Hacer el mercado</li>
+        <li>Preparar el almuerzo</li>
+    </ol>
+
+    <script>
+
+        //EJERCICO 4 
+        let NuevoElelemto = document.createElement("ul");
+        NuevoElelemto.innerHTML ='<li class = \primero\>desayunar</li><li class = segundo >ir al banco</li><li class = tercero>hacer el mercado</li><li class = cuarto >preparar el almuerzo</li>';
+        console.log(NuevoElelemto);
+
+        let padre = document.getElementsByTagName("ol")[0].parentNode;
+        let referencia = document.getElementsByTagName("ol")[0];
+        padre.replaceChild(NuevoElelemto,referencia);
+
+        //EJERCICIO 5
+
+        let color = document.querySelector("ul");
+        console.log(color);
+        color.style.color="gray";
+        color.style.fontWeight="bold";
+
+        
+        let eliminar = document.querySelectorAll("li")[3];
+        console.log(eliminar);
+
+        color.removeChild(eliminar);
+
+        /*let pintarclases = document.createElement("div");
+        document.body.appendChild(pintarclases);
+
+        pintarclases.id = "color";*/
+
+
+        //EJERCICIO 6
+
+        
+
+
+
+
+
+
+        
+
+
+
+    </script>
+
+</body>
+</html>
