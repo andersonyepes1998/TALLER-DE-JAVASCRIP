@@ -7,13 +7,25 @@
     <title>PUNTO # 4</title>
 
     <style>
+        .lista{
+            color: blue;
+            font-style: italic;
+        }
+
+        .cumplido{
+            background-color: chartreuse;
+        }
+
+        .fallido{
+            background-color: red;
+        }
 
     </style>
 
 </head>
 <body>
     
-    <H2 class="lista">Listado de que haceres</H2>
+    <H2>Listado de que haceres</H2>
     <ol>
         <li>Desayunar</li>
         <li>Ir al banco</li>
@@ -36,31 +48,22 @@
 
         let color = document.querySelector("ul");
         console.log(color);
-        color.style.color="gray";
-        color.style.fontWeight="bold";
 
-        
         let eliminar = document.querySelectorAll("li")[3];
         console.log(eliminar);
 
         color.removeChild(eliminar);
 
-        /*let pintarclases = document.createElement("div");
-        document.body.appendChild(pintarclases);
 
-        pintarclases.id = "color";*/
+        let elementoh2 = document.querySelector("h2");
+        console.log(elementoh2);
 
+        elementoh2.setAttribute("class","lista");
 
         //EJERCICIO 6
 
         
 
-
-
-
-
-
-        
 
 
 
