@@ -37,7 +37,7 @@
 
         //EJERCICO 4 
         let NuevoElelemto = document.createElement("ul");
-        NuevoElelemto.innerHTML ='<li class = \primero\>desayunar</li><li class = segundo >ir al banco</li><li class = tercero>hacer el mercado</li><li class = cuarto >preparar el almuerzo</li>';
+        NuevoElelemto.innerHTML ='<li class = primero>desayunar</li><li class = segundo >ir al banco</li><li class = tercero>hacer el mercado</li><li class = cuarto >preparar el almuerzo</li>';
         console.log(NuevoElelemto);
 
         let padre = document.getElementsByTagName("ol")[0].parentNode;
@@ -46,14 +46,14 @@
 
         //EJERCICIO 5
 
-        let color = document.querySelector("ul");
+        /*let color = document.querySelector("ul");
         console.log(color);
 
         let eliminar = document.querySelectorAll("li")[3];
         console.log(eliminar);
 
         color.removeChild(eliminar);
-
+        */
 
         let elementoh2 = document.querySelector("h2");
         console.log(elementoh2);
@@ -62,9 +62,31 @@
 
         //EJERCICIO 6
 
-        
+        let nuevoitems = document.querySelector("ul");
+        console.log(nuevoitems);
 
+        let itemsnuevo = document.createElement("li");
 
+        itemsnuevo.innerText = "Recoger a los niños";
+
+        let texto = nuevoitems.querySelectorAll("li")[3].insertAdjacentElement("afterend",itemsnuevo);
+        console.log(texto);
+
+        let ponerclase = document.querySelectorAll("li")[0];
+        console.log(ponerclase);
+        ponerclase.setAttribute("class","cumplido");
+
+        let ponerclase2 = document.querySelectorAll("li")[2];
+        ponerclase2.setAttribute("class","cumplido");
+
+        let ponerclase3 = document.querySelectorAll("li")[4];
+        ponerclase3.setAttribute("class","cumplido");
+
+        let ponerclase4 = document.querySelectorAll("li")[1];
+        ponerclase4.setAttribute("class","fallido");
+
+        let ponerclase5 = document.querySelectorAll("li")[3];
+        ponerclase5.setAttribute("class","fallido");
 
 
     </script>
